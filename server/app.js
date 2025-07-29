@@ -25,5 +25,5 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 
 // route
 app.get("/api", (req, res) => {
-    res.status(200).json({message: "Connected to Backend!"});
+  res.json({ message: "Hello from backend" });
 });
