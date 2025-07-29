@@ -5,7 +5,7 @@ function App() {
 
   // Fetching message from backend on mount
   useEffect(() => {
-    fetch("/api")
+    fetch("/api/")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
